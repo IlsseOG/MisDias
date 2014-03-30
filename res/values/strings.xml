@@ -15,7 +15,8 @@
     <string name="agregarNota">Agregar Nota</string>
     <string name="agregarSintoma">Agregar Sintoma</string>
     <string name="addNota">Agregar Nota</string>
-    <string name="historial">Histarial</string>
+    <string name="historial">Historial</string>
     <string name="sintomas">Sintomas</string>
+    <string name="lblInicio">Inicio</string>
 
 </resources>

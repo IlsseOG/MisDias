@@ -56,7 +56,7 @@
         android:layout_alignBaseline="@+id/btnHistorial"
         android:layout_alignBottom="@+id/btnHistorial"
         android:layout_toRightOf="@+id/etNotas"
-        android:text="Inicio" />
+        android:text="@string/lblInicio" />
 
     <EditText
         android:id="@+id/editText1"
@@ -79,6 +79,7 @@
         android:layout_marginLeft="18dp"
         android:layout_marginTop="88dp"
         android:layout_toRightOf="@+id/tvFecha"
+        android:onClick="verSintomas"
         android:text="@string/agregarSintoma" />
 
     <Button

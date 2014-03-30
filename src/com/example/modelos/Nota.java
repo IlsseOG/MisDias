@@ -7,8 +7,8 @@ public class Nota {
 	public static final String FECHA = "fecha";
 
 	
-	public static final String CREATE_TABLE = "CREATE TABLE " + TABLE_NAME + " (" +
+	public static final String CREATE_TABLE = "CREATE TABLE IF NOT EXISTS " + TABLE_NAME + " (" +
 			ID + " INTEGER PRIMARY KEY AUTOINCREMENT ," + 
 			DESCRIPCION + " TEXT, " + 
-			FECHA + " TEXT, );";
+			FECHA + " TEXT );";
 }

@@ -54,12 +54,15 @@ public class DatabaseHelper extends SQLiteOpenHelper {
 		}
 		c.close();
 
+		
 		ContentValues cv = new ContentValues();
 		cv.put(Periodo.INICIO, inicioPeriodo);
 		cv.put(Periodo.FINAL, finalPeriodo);
 		cv.put(Periodo.DURACION, duracion);
 
 		long result = db.insert(Periodo.TABLE_NAME, null, cv);
+		
+		db.close();
 		return result;
 	}
 
@@ -68,6 +71,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
 		SQLiteDatabase db = getWritableDatabase();
 		Cursor c = db.query(Periodo.TABLE_NAME, null, null, null, null, null,
 				null);
+		db.close();
 		return c;
 	}
 
@@ -84,6 +88,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
 
 		SQLiteDatabase db = getWritableDatabase();
 		long result = db.insert(Periodo.TABLE_NAME, null, cv);
+		db.close();
 		return result;
 	}
 
@@ -133,11 +138,19 @@ public class DatabaseHelper extends SQLiteOpenHelper {
 			}
 			c.close();
 		}
-		
+		db.close();
 		return result;
 	}
 	
-	public int obtenerUltimaNota(){
+	//Metodo para obtener todas las notas
+	public Cursor todasNotas() {
+		SQLiteDatabase db = getWritableDatabase();
+		Cursor c = db.query(Nota.TABLE_NAME, null, null, null, null, null,null);
+		return c;
+	}
+	
+	//Metodo para obtener la id de la ultima nota
+	int obtenerUltimaNota(){
 		int lastId = 0;
 		
 		SQLiteDatabase db = getWritableDatabase();
@@ -147,7 +160,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
 			lastId = c.getInt(0); 
 		}
 		c.close();
-		
+		db.close();
 		return lastId;
 	}
 	
@@ -163,6 +176,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
 
 		SQLiteDatabase db = getWritableDatabase();
 		long result = db.insert(Notas_Sintomas.TABLE_NAME, null, cv);
+		db.close();
 		return result;
 	}
 }

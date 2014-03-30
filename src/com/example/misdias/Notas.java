@@ -1,7 +1,9 @@
 package com.example.misdias;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 
 public class Notas extends Activity {
 
@@ -18,4 +20,10 @@ public class Notas extends Activity {
 		return true;
 	}*/
 
+	//Metodo para ver historial de notas
+		public void verSintomas(View v)
+		{
+			Intent intent = new Intent(Notas.this, Sintomas.class); 
+			startActivity(intent);	
+		}
 }

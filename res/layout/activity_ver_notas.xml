@@ -2,7 +2,6 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:gravity="center"
     android:orientation="vertical"
     android:paddingBottom="@dimen/activity_vertical_margin"
     android:paddingLeft="@dimen/activity_horizontal_margin"
@@ -11,10 +10,10 @@
     tools:context=".Principal" >
 
     <TextView
-        android:id="@+id/tvHistorial"
+        android:id="@+id/tvNotas"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/sintomas" />
+        android:text="@string/notas" />
 
     <LinearLayout
         android:id="@+id/linearLayout1"
@@ -40,28 +39,29 @@
         android:id="@+id/android:list"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_above="@+id/btnAddNota"
+        android:layout_above="@+id/btnAgregarNotas"
         android:layout_toRightOf="@+id/tvHistorial" >
 
     </ListView>
 
     <Button
-        android:id="@+id/btnInicio"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignBaseline="@+id/btnAddNota"
-        android:layout_alignBottom="@+id/btnAddNota"
-        android:layout_alignLeft="@+id/linearLayout1"
-        android:text="@string/lblInicio" />
-
-    <Button
-        android:id="@+id/btnAddNota"
+        android:id="@+id/btnAgregarNotas"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
-        android:layout_alignRight="@+id/android:lvSintomas"
-        android:layout_marginBottom="37dp"
-        android:layout_marginRight="14dp"
-        android:text="@string/addNota" />
+        android:layout_alignRight="@+id/android:listNotas"
+        android:layout_marginBottom="23dp"
+        android:onClick="agregarNota"
+        android:text="@string/agregarNota" />
+
+    <Button
+        android:id="@+id/btnInicio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/btnAgregarNotas"
+        android:layout_alignBottom="@+id/btnAgregarNotas"
+        android:layout_alignLeft="@+id/linearLayout1"
+        android:onClick="irInicio"
+        android:text="@string/lblInicio" />
 
 </RelativeLayout>

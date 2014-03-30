@@ -7,7 +7,7 @@ public class Periodo {
 	public static final String DURACION = "duracion";
 	public static final String ID = "id";
 	
-	public static final String CREATE_TABLE = "CREATE TABLE " + TABLE_NAME + " (" +
+	public static final String CREATE_TABLE = "CREATE TABLE IF NOT EXISTS " + TABLE_NAME + " (" +
 			ID + " INTEGER PRIMARY KEY AUTOINCREMENT ," + 
 			INICIO + " TEXT, " + 
 			FINAL + " TEXT, " + 
