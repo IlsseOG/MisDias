@@ -60,6 +60,6 @@
         android:layout_alignBaseline="@+id/btnAddNota"
         android:layout_alignBottom="@+id/btnAddNota"
         android:layout_alignLeft="@+id/linearLayout1"
-        android:text="Inicio" />
+        android:text="@string/lblInicio" />
 
 </RelativeLayout>
