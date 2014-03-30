@@ -16,5 +16,6 @@
     <string name="agregarSintoma">Agregar Sintoma</string>
     <string name="addNota">Agregar Nota</string>
     <string name="historial">Histarial</string>
+    <string name="sintomas">Sintomas</string>
 
 </resources>
