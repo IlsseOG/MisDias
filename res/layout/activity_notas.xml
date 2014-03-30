@@ -1,0 +1,93 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".Principal" >
+
+    <TextView
+        android:id="@+id/tvHistorial"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/notas" />
+
+    <EditText
+        android:id="@+id/etNotas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvHistorial"
+        android:layout_toLeftOf="@+id/btnNotas"
+        android:ems="10"
+        android:height="30dp"
+        android:inputType="textMultiLine" />
+
+    <TextView
+        android:id="@+id/tvFecha"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/etNotas"
+        android:layout_below="@+id/etNotas"
+        android:layout_marginTop="16dp"
+        android:text="Fecha" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnHistorial"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tvFecha"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="18dp"
+        android:text="@string/verHistorial" />
+
+    <Button
+        android:id="@+id/btnInicio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/btnHistorial"
+        android:layout_alignBottom="@+id/btnHistorial"
+        android:layout_toRightOf="@+id/etNotas"
+        android:text="Inicio" />
+
+    <EditText
+        android:id="@+id/editText1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvFecha"
+        android:layout_marginTop="18dp"
+        android:layout_toLeftOf="@+id/btnInicio"
+        android:ems="10"
+        android:inputType="date" >
+
+        <requestFocus />
+    </EditText>
+
+    <Button
+        android:id="@+id/btnAddSintoma"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editText1"
+        android:layout_marginLeft="18dp"
+        android:layout_marginTop="88dp"
+        android:layout_toRightOf="@+id/tvFecha"
+        android:text="@string/agregarSintoma" />
+
+    <Button
+        android:id="@+id/btnAddSintoma"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editText1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="33dp"
+        android:text="@string/addNota" />
+
+</RelativeLayout>

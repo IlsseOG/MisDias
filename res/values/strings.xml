@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Mis Dias</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="diaCorriente">Dia 1 del periodo</string>
+    <string name="inicio">Inicio</string>
+    <string name="fin">Fin</string>
+    <string name="verHistorial">Ver Historial</string>
+    <string name="verNotas">Ver Notas</string>
+    <string name="notas">Notas</string>
+    <string name="fechas">Fechas</string>
+    <string name="agregarSintomas">Agregar Sintomas</string>
+    <string name="agregarNota">Agregar Nota</string>
+    <string name="agregarSintoma">Agregar Sintoma</string>
+    <string name="addNota">Agregar Nota</string>
+    <string name="historial">Histarial</string>
+
+</resources>
